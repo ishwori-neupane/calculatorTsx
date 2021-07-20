@@ -1,11 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import "./Styles.css";
 import Main from "./Main";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Calculator from "./Calculator";
 
 function App() {
-  return <Main />;
+  return <Calculator/>;
 }
 
 export default App;

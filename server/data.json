@@ -13,5 +13,68 @@
       "id": 2
     }
   ],
-  "tags": []
+  "tags": [{
+    "tag":"Travel"
+  },
+{
+    "tag":"New York"
+  },{
+    "tag":"London"
+  },{
+    "tag":"IKEA"
+  },
+{
+    "tag":"NORWAY"
+  },
+  {
+    "tag":"DIYIdeas"
+  }
+,
+  {
+    "tag":"Games"
+  },
+  {
+    "tag":"Sports"
+  },
+  {
+    "tag":"Shopping"
+  },
+  {
+    "tag":" Clothing"
+  },
+  {
+    "tag":"News"
+  },
+  {
+    "tag":"Family"
+  },
+  {
+    "tag":"Baby"
+  }
+],
+"popularPosts":[{
+  "image":"https://www.w3schools.com/w3images/bridge.jpg",
+  "title":"My First Blog",
+  "subtitle":"blog"
+},{
+  "image":"https://www.w3schools.com/w3images/bridge.jpg",
+  "title":"My First Blog",
+  "subtitle":"blog"
+},{
+  "image":"https://www.w3schools.com/w3images/bridge.jpg",
+  "title":"My First Blog",
+  "subtitle":"blog"
+},{
+  "image":"https://www.w3schools.com/w3images/bridge.jpg",
+  "title":"My First Blog",
+  "subtitle":"blog",
+  "popular":true
+},{
+  "image":"https://www.w3schools.com/w3images/bridge.jpg",
+  "title":"My First Blog",
+  "subtitle":"blog",
+  "popular":true
+}
+]
+  
 }

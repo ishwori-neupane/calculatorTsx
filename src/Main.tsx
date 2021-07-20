@@ -1,33 +1,29 @@
 import React from "react";
 import BlogSection from "./BlogSection";
-import BlogList from "./components/BlogList";
+import Tags from "./components/Tags";
+import PopularPost from "./components/PopularPost";
+import NavBar from "./components/NavBar";
+import Header from "./Header";
 
 const Main = () => {
   return (
     <>
+      <NavBar/>
       <div className="w3-light-grey">
         <div className="w3-content" style={{ maxWidth: 1400 }}>
-          <header className="w3-container w3-center w3-padding-32">
-            <h1>
-              <b>MY BLOG</b>
-            </h1>
-            <p>
-              Welcome to the blog of <span className="w3-tag">unknown</span>
-            </p>
-          </header>
-
+          <Header/>
           <div className="w3-row">
             <BlogSection />
 
             <div className="w3-col l4">
               <div className="w3-card w3-margin w3-margin-top">
                 <img
-                  src="https://www.w3schools.com/w3images/avatar_g.jpg"
-                  style={{ width: "100%" }}
+                  src="https://www.w3schools.com/w3images/avatar_g.jpg" alt=""
+                  style={{ width: "100%" } }
                 />
                 <div className="w3-container w3-white">
                   <h4>
-                    <b>My Name</b>
+                    <b>Ishwori Neupane</b>
                   </h4>
                   <p>
                     Just me, myself and I, exploring the universe of uknownment.
@@ -37,112 +33,10 @@ const Main = () => {
                 </div>
               </div>
               <hr />
-
-              <div className="w3-card w3-margin">
-                <div className="w3-container w3-padding">
-                  <h4>Popular Posts</h4>
-                </div>
-                <ul className="w3-ul w3-hoverable w3-white">
-                  <li className="w3-padding-16">
-                    <img
-                      src="https://www.w3schools.com/w3images/workshop.jpg"
-                      alt="Image"
-                      className="w3-left w3-margin-right"
-                      style={{ width: "50px" }}
-                    />
-                    <span className="w3-large">Lorem</span>
-                    <br />
-                    <span>Sed mattis nunc</span>
-                  </li>
-                  <li className="w3-padding-16">
-                    <img
-                      src="https://www.w3schools.com/w3images/gondol.jpg"
-                      alt="Image"
-                      className="w3-left w3-margin-right"
-                      style={{ width: "50px" }}
-                    />
-                    <span className="w3-large">Ipsum</span>
-                    <br />
-                    <span>Praes tinci sed</span>
-                  </li>
-                  <li className="w3-padding-16">
-                    <img
-                      src="https://www.w3schools.com/w3images/skies.jpg"
-                      alt="Image"
-                      className="w3-left w3-margin-right"
-                      style={{ width: "50px" }}
-                    />
-                    <span className="w3-large">Dorum</span>
-                    <br />
-                    <span>Ultricies congue</span>
-                  </li>
-                  <li className="w3-padding-16 w3-hide-medium w3-hide-small">
-                    <img
-                      src="https://www.w3schools.com/w3images/rock.jpg"
-                      alt="Image"
-                      className="w3-left w3-margin-right"
-                      style={{ width: "50px" }}
-                    />
-                    <span className="w3-large">Mingsum</span>
-                    <br />
-                    <span>Lorem ipsum dipsum</span>
-                  </li>
-                </ul>
+              <PopularPost/>
+               <hr />
+               <Tags/>
               </div>
-              <hr />
-
-              <div className="w3-card w3-margin">
-                <div className="w3-container w3-padding">
-                  <h4>Tags</h4>
-                </div>
-                <div className="w3-container w3-white">
-                  <p>
-                    <span className="w3-tag w3-black w3-margin-bottom">
-                      Travel
-                    </span>{" "}
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      New York
-                    </span>{" "}
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      London
-                    </span>
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      IKEA
-                    </span>{" "}
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      NORWAY
-                    </span>{" "}
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      DIY
-                    </span>
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Ideas
-                    </span>{" "}
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Baby
-                    </span>{" "}
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Family
-                    </span>
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      News
-                    </span>{" "}
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Clothing
-                    </span>{" "}
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Shopping
-                    </span>
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Sports
-                    </span>{" "}
-                    <span className="w3-tag w3-light-grey w3-small w3-margin-bottom">
-                      Games
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
           <br />
         </div>
